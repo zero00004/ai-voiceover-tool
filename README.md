@@ -43,14 +43,15 @@ python voiceover.py --text "这个功能很实用" --polish
 
 ## 可用语音
 
-| 语音名称 | 风格 |
-|:---------|:-----|
-| zh-CN-XiaoxiaoNeural | 女生，自然亲切 |
-| zh-CN-YunxiNeural | 男生，沉稳 |
-| zh-CN-XiaoyiNeural | 女生，活泼 |
-| zh-CN-YunyangNeural | 男生，专业 |
-| zh-CN-XiaohanNeural | 女生，温柔 |
-| zh-HK-HiuGaaiNeural | 粤语女生 |
+| 语音名称 | 性别 | 风格 |
+|:---------|:----|:-----|
+| zh-CN-XiaoxiaoNeural | 女生 | 温暖自然 |
+| zh-CN-YunxiNeural | 男生 | 阳光活泼 |
+| zh-CN-XiaoyiNeural | 女生 | 活泼可爱 |
+| zh-CN-YunyangNeural | 男生 | 专业沉稳 |
+| zh-CN-YunjianNeural | 男生 | 激情运动 |
+| zh-CN-YunxiaNeural | 男生 | 卡通可爱 |
+| zh-HK-HiuGaaiNeural | 粤语女生 | 友好积极 |
 
 ---
 

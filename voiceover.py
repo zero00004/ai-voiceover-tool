@@ -90,18 +90,22 @@ def list_voices():
         )
         lines = result.stdout.split('\n')
         chinese_voices = []
+        print("\n🎤 所有可用中文语音：\n")
+        print(f"{'语音名称':<40} {'性别':<8} {'风格':<20}")
+        print("-"*70)
         for line in lines:
-            if 'zh-' in line.lower() or 'Chinese' in line:
-                chinese_voices.append(line.strip())
+            if 'zh-' in line.lower():
+                parts = line.split()
+                if len(parts) >= 2:
+                    chinese_voices.append(line.strip())
+                    print(line.strip())
         
-        print("\n🎤 可用中文语音：\n")
-        for v in chinese_voices:
-            print(f"  {v}")
         print(f"\n共 {len(chinese_voices)} 个中文语音")
         print("\n💡 推荐语音：")
-        print("  zh-CN-XiaoxiaoNeural  (女生，自然亲切)")
-        print("  zh-CN-YunxiNeural     (男生，沉稳)")
+        print("  zh-CN-XiaoxiaoNeural  (女生，温暖自然)")
+        print("  zh-CN-YunxiNeural     (男生，阳光)")
         print("  zh-CN-XiaoyiNeural    (女生，活泼)")
+        print("  zh-CN-YunyangNeural   (男生，专业沉稳)")
         print("  zh-HK-HiuGaaiNeural   (粤语，女生)")
         return chinese_voices
     except Exception as e:
